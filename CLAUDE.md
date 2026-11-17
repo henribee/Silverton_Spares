@@ -20,7 +20,7 @@ Inventory system for **furniture spare parts**. Staff use a phone or a barcode s
 ## Hard rules
 - **Stock changes only through `apply_movement()`.** Never update `stock` or insert into `movements` directly.
 - Every movement carries a client-generated **idempotency key** (UUID). Retries must be safe.
-- **Never delete parts.** Set `status` to `obsolete` or `superseded`.
+- **Never delete parts.** Set `status` to `active`, 'hold', 'obsolete', or `superseded`.
 - The SKU is the identity. Outside numbers go in `part_aliases`; purchasing terms go in `supplier_parts`.
 - Compare part numbers using `normalize_part_number()`, never raw text.
 - Schema changes are **migration files only**, never dashboard edits. Add RLS policies in the same migration as any new table.
