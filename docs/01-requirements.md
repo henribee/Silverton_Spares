@@ -1,7 +1,5 @@
 # Requirements
 
-**Status: DRAFT, under review.** Not final. Do not treat as approved scope until review is complete.
-
 Priority: **MUST** (v1), **SHOULD** (v1 if time), **LATER** (after v1). Numbers are stable; new requirements fill gaps or use new groups.
 
 ## Catalog
