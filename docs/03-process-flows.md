@@ -1,7 +1,5 @@
 # Process flows
 
-**Status: DRAFT, under review.** Not final.
-
 ## 1. Scan flow (Receive / Move / Issue)
 ```mermaid
 flowchart TD
