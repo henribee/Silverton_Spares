@@ -10,7 +10,7 @@ Priority: **MUST** (v1), **SHOULD** (v1 if time), **LATER** (after v1). Numbers 
 - REQ-003 MUST: An alias is unique per (normalized number, source). The same number from different sources may map to different parts.
 - REQ-004 MUST: Matching ignores case, spaces, dashes, and punctuation (`AB-1234` = `ab 1234`; a scanned silverton_sku matches with or without dashes).
 - REQ-005 MUST: Aliases carry a `verified` flag; unverified matches are shown as such.
-- REQ-006 MUST: Parts are never deleted; they are set to obsolete or superseded.
+- REQ-006 MUST: Parts are never deleted; they are set to a status: active, hold, obsolete, or superseded.
 - REQ-007 SHOULD: A superseded part points to its replacement.
 - REQ-008 SHOULD: Admin can merge two parts; aliases, stock, fitment, and history move to the survivor and the merge is logged.
 - REQ-009 SHOULD: Parts can have photos.
@@ -64,6 +64,7 @@ Priority: **MUST** (v1), **SHOULD** (v1 if time), **LATER** (after v1). Numbers 
 - REQ-061 MUST: CSV import for parts, aliases, locations, fitment.
 - REQ-062 SHOULD: Print location and part labels (silverton_sku as the barcode value).
 - REQ-063 MUST: Movement history per part and per location.
+- REQ-064 MUST: have an admin section to set up the warehouse location and bin structure.
 
 ## Security, audit, and quality
 - REQ-070 MUST: Users sign in; movements are attributed to a user.
